@@ -3,7 +3,6 @@ package com.busramestan.firstSpringBoot.controller;
 import com.busramestan.firstSpringBoot.entity.Book;
 import com.busramestan.firstSpringBoot.service.BookService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
