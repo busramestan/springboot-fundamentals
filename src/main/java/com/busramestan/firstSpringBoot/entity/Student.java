@@ -28,7 +28,8 @@ public class Student {
     @Column(name = "last_name")
     private String lastName;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonManagedReference  //JSON oluşturulurken bu taraf dahil edilir
     private List<Book> books  = new ArrayList<>();
 
 }

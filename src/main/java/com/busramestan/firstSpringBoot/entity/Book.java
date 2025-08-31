@@ -26,6 +26,7 @@ public class Book {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "student_id")
+    @JsonBackReference   //JSON oluşturulurken bu taraf dahil edilmez
     private Student student;
 
 
