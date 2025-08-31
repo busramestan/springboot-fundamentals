@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("rest/api/student")
 @RequiredArgsConstructor
 public class RestStudentController {
-    public final StudentService studentService;
+    private final StudentService studentService;
 
     @PostMapping(path = "/save")
     public Student saveStudent(@RequestBody Student student){

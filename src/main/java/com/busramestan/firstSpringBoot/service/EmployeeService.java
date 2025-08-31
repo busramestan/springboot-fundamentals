@@ -1,11 +1,9 @@
 package com.busramestan.firstSpringBoot.service;
 
 import com.busramestan.firstSpringBoot.entity.Employee;
-import com.busramestan.firstSpringBoot.entity.UpdateEmployeeRequest;
 import com.busramestan.firstSpringBoot.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 import java.util.Optional;

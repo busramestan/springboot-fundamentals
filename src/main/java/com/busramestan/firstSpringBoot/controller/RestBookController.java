@@ -23,5 +23,4 @@ public class RestBookController {
         return bookService.getAllBooks();
     }
 
-
 }
