@@ -42,5 +42,15 @@ public class EmployeeController {
     public List<Employee> findByDepartmentIgnoreCase(@RequestParam String department){
         return employeeService.findByDepartmentIgnoreCase(department);
     }
+
+    @GetMapping(path = "/rich-employees")
+    public List<Employee> listRichEmployees(@RequestParam(value = "amount") Double amount){
+        return employeeService.listRichEmployees(amount);
+    }
+
+    @GetMapping(path = "/hobby")
+    public List<Employee> listEmployeesByHobby(@RequestParam(value = "hobby") String hobby){
+        return employeeService.listEmployeesByHobby(hobby);
+    }
 }
 

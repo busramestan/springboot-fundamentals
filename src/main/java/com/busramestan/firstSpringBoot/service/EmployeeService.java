@@ -43,7 +43,6 @@ public class EmployeeService {
         dbEmployee.setLastName(updateEmployee.getLastName());
 
         return employeeRepository.save(dbEmployee);
-
     }
 
     public List<Employee> findByFirstNameContaining(String firstName){
@@ -52,5 +51,13 @@ public class EmployeeService {
 
     public List<Employee> findByDepartmentIgnoreCase(String department){
         return employeeRepository.findByDepartmentIgnoreCase(department);
+    }
+
+    public List<Employee> listRichEmployees(Double amount){
+        return employeeRepository.listRichEmployees(amount);
+    }
+
+    public List<Employee> listEmployeesByHobby(String hobby){
+        return employeeRepository.listEmployeesByHobby(hobby);
     }
 }
