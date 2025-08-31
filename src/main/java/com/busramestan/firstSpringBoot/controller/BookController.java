@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("rest/api/book")
-public class RestBookController {
+public class BookController {
     private final BookService bookService;
 
     @PostMapping(path = "/save")

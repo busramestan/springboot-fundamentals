@@ -45,4 +45,12 @@ public class EmployeeService {
         return employeeRepository.save(dbEmployee);
 
     }
+
+    public List<Employee> findByFirstNameContaining(String firstName){
+        return employeeRepository.findByFirstNameContaining(firstName);
+    }
+
+    public List<Employee> findByDepartmentIgnoreCase(String department){
+        return employeeRepository.findByDepartmentIgnoreCase(department);
+    }
 }

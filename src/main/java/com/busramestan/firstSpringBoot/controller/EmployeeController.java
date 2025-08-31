@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("rest/api/employee")
-public class RestEmployeeController {
+public class EmployeeController {
     private final EmployeeService employeeService;
 
     @PostMapping(path = "/save")
@@ -32,6 +32,15 @@ public class RestEmployeeController {
     public Employee updateEmployee(@PathVariable(name = "id") Long id, @RequestBody Employee updateEmployee){
         return employeeService.updateEmployee(id, updateEmployee);
 
+    }
+    @GetMapping(path = "/search-by-name")
+    public List<Employee> findByFirstNameContaining(@RequestParam String firstName) {
+        return employeeService.findByFirstNameContaining(firstName);
+    }
+
+    @GetMapping(path = "/search-by-department")
+    public List<Employee> findByDepartmentIgnoreCase(@RequestParam String department){
+        return employeeService.findByDepartmentIgnoreCase(department);
     }
 }
 
