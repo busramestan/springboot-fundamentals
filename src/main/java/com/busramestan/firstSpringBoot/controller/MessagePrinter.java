@@ -1,4 +1,4 @@
-package com.busramestan.firstSpringBoot;
+package com.busramestan.firstSpringBoot.controller;
 
 import org.springframework.stereotype.Component;
 

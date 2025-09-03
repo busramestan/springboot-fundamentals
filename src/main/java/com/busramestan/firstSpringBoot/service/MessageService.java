@@ -1,5 +1,6 @@
-package com.busramestan.firstSpringBoot;
+package com.busramestan.firstSpringBoot.service;
 
+import com.busramestan.firstSpringBoot.controller.MessagePrinter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
